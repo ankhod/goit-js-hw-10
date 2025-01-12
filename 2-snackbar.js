@@ -1,0 +1,2 @@
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";import{i}from"./assets/vendor-A92OCY9B.js";document.querySelector(".form").addEventListener("submit",function(s){s.preventDefault();const t=parseInt(s.target.delay.value,10),r=s.target.state.value;new Promise((e,o)=>{setTimeout(()=>{r==="fulfilled"?e(t):o(t)},t)}).then(e=>{i.success({title:"Success",message:`✅ Fulfilled promise in ${e}ms`})}).catch(e=>{i.error({title:"Error",message:`❌ Rejected promise in ${e}ms`})})});i.success({title:"Test",message:"iziToast is working!"});
+//# sourceMappingURL=2-snackbar.js.map
