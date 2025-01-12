@@ -35,13 +35,6 @@ const options = {
 flatpickr(datetimePicker, options);
 
 startButton.addEventListener('click', () => {
-  if (!userSelectedDate) {
-    iziToast.error({
-      title: 'Error',
-      message: 'Please select a date before starting the timer',
-    });
-    return;
-  }
   startButton.disabled = true;
   datetimePicker.disabled = true;
   timerId = setInterval(updateTimer, 1000);
