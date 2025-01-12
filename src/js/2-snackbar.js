@@ -22,12 +22,14 @@ document.querySelector('.form').addEventListener('submit', function (event) {
       iziToast.success({
         title: 'Success',
         message: `✅ Fulfilled promise in ${delay}ms`,
+        position: 'topCenter',
       });
     })
     .catch(delay => {
       iziToast.error({
         title: 'Error',
         message: `❌ Rejected promise in ${delay}ms`,
+        position: 'topCenter',
       });
     });
 });
@@ -35,4 +37,5 @@ document.querySelector('.form').addEventListener('submit', function (event) {
 iziToast.success({
   title: 'Test',
   message: 'iziToast is working!',
+  position: 'topCenter',
 });

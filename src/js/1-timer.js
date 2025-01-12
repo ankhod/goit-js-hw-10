@@ -24,6 +24,7 @@ const options = {
       iziToast.error({
         title: 'Error',
         message: 'Please choose a date in the future',
+        position: 'topCenter',
       });
       startButton.disabled = true;
     } else {
@@ -51,6 +52,7 @@ function updateTimer() {
     iziToast.info({
       title: 'Time Up',
       message: 'The countdown has ended!',
+      position: 'topCenter',
     });
     return;
   }
